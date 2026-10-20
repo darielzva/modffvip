@@ -73,22 +73,22 @@ THE SOFTWARE.
 <script defer src="./fish-export-points.js"></script><link rel="stylesheet" href="./category-icons.css"><link rel="stylesheet" href="./item-picker.css"><script defer src="./item-picker.js?v=20261011-1347"></script>
 
 <style id="tema-darielmodz">
-:root{color-scheme:light;--bg:#eaf3fc;--panel:#ffffff;--line:#e0eaf5;--muted:#7b8aa0;--text:#1a2335;--accent:#2f80ed;--accent-soft:#e3effd;--green:#2f80ed;--shadow:0 8px 24px rgba(47,100,170,.10)}
+:root{color-scheme:light;--bg:#eaf3fc;--panel:#ffffff;--line:#e0eaf5;--muted:#7b8aa0;--text:#1a2335;--accent:#6b9bd6;--accent-soft:#e3effd;--green:#6b9bd6;--shadow:0 8px 24px rgba(90,125,170,.10)}
 body{background:linear-gradient(180deg,#e4f0fc 0%,#f1f7fd 45%,#f7fafe 100%) fixed;color:var(--text);font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
 button{color:var(--text)}
 button:focus-visible,a:focus-visible,select:focus-visible{outline-color:var(--accent)}
 /* Cabecera con logo */
 .topbar{border-bottom:0;height:auto;padding:26px 0 10px}
 .brand{gap:20px;letter-spacing:0;color:var(--text)}
-.brandmark{position:relative;width:96px;height:96px;border-radius:28px;overflow:hidden;background:linear-gradient(135deg,#6aa8ff,#2f80ed);color:#fff;font-size:44px;font-weight:800;border:4px solid #fff;box-shadow:var(--shadow)}
+.brandmark{position:relative;width:96px;height:96px;border-radius:28px;overflow:hidden;background:linear-gradient(135deg,#a9c8ee,#6b9bd6);color:#fff;font-size:44px;font-weight:800;border:4px solid #fff;box-shadow:var(--shadow)}
 .brandmark img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .brand-text{display:flex;flex-direction:column;line-height:1.1}
 .brand-text small{font-size:13px;font-weight:700;letter-spacing:3px;color:var(--accent);margin-bottom:8px}
 .brand-text b{font-size:40px;font-weight:800;letter-spacing:-.5px;color:var(--text)}
-.platform{background:var(--accent-soft);color:#2a6fcb;border-radius:20px;padding:6px 13px;font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;box-shadow:var(--shadow)}
-.dot{background:#39a0ff;height:7px;width:7px}
+.platform{background:var(--accent-soft);color:#5b87c2;border-radius:20px;padding:6px 13px;font-size:10px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;box-shadow:var(--shadow)}
+.dot{background:#6fb0ee;height:7px;width:7px}
 .fish-menu-toggle{background:#fff;border-color:var(--line);color:var(--text);box-shadow:var(--shadow);border-radius:14px}
-.fish-menu{background:#fff;border-color:var(--line);box-shadow:0 14px 36px rgba(47,100,170,.18);border-radius:16px}
+.fish-menu{background:#fff;border-color:var(--line);box-shadow:0 14px 36px rgba(90,125,170,.18);border-radius:16px}
 .fish-menu a{color:var(--text);border-radius:10px}.fish-menu a:hover{background:var(--accent-soft)}
 /* Intro */
 .eyebrow{color:var(--accent)}
@@ -99,7 +99,7 @@ h1{color:var(--text)}
 .stage{background:#f7fbff}
 .stage-footer{border-top-color:var(--line)}
 #viewport{background:radial-gradient(ellipse at 50% 45%,#ffffff 0,#e8f2fd 45%,#d9e8f8 100%)}
-.watermark{color:#2f80ed0f}
+.watermark{color:#6b9bd60f}
 .character-name{color:var(--text)}
 .badge{color:var(--accent);border-color:#bcd6f6;background:#fff}
 .hint,.preview-message{color:var(--muted)}
@@ -109,7 +109,8 @@ h1{color:var(--text)}
 .preset{background:#f4f8fd;border-color:var(--line)}.preset:hover{background:var(--accent-soft)}
 .preset[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
 .form-row label,.fixed-label{color:var(--text);font-weight:600}
-.row-icon{color:var(--accent)}
+.row-icon,.category-icon{width:40px;height:40px;padding:8px;box-sizing:border-box;border-radius:14px;background:linear-gradient(135deg,#a9c8ee,#6b9bd6);object-fit:contain;vertical-align:middle;box-shadow:0 6px 14px rgba(107,155,214,.28)}
+.item-picker-button img[src*="category-icons"],.item-picker-option img[src*="category-icons"]{background:linear-gradient(135deg,#a9c8ee,#6b9bd6);border-radius:12px;padding:6px;box-sizing:border-box}
 .select-wrap::after{color:var(--accent)}
 select{background:#f4f8fd;border:1px solid #d6e4f4;color:var(--text);border-radius:14px}
 select:hover{border-color:#9cc2f3}
@@ -121,8 +122,8 @@ select:hover{border-color:#9cc2f3}
 .download-area{border-top-color:var(--line)}
 .selection-caption{color:var(--muted)}
 .selection-summary{color:#33507a}
-.download{background:linear-gradient(135deg,#4a9bff,#2f80ed);color:#fff;border-radius:16px;box-shadow:0 10px 22px rgba(47,128,237,.32)}
-.download:hover{background:linear-gradient(135deg,#5aa6ff,#3a8bf5)}
+.download{background:linear-gradient(135deg,#8db8ea,#6b9bd6);color:#fff;border-radius:16px;box-shadow:0 10px 22px rgba(107,155,214,.32)}
+.download:hover{background:linear-gradient(135deg,#9cc3ee,#7aa9e0)}
 .download:disabled{background:#c9d9ec;color:#8798ae;box-shadow:none}
 .status{color:var(--muted)}.status.error{color:#d64545}
 footer,footer a{color:var(--muted)}
@@ -138,15 +139,54 @@ body>[class*="picker"],[class*="picker-panel"],[class*="picker-menu"],[class*="p
 .version-step-title{color:var(--muted)}.step-number{background:var(--accent-soft);color:var(--accent)}
 .choice-card,.package-card{background:#f4f8fd;border-color:var(--line);color:var(--text)}
 .choice-card.active{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
-.choice-card.active small{color:#2a6fcb}.package-arrow{color:var(--accent)}
+.choice-card.active small{color:#5b87c2}.package-arrow{color:var(--accent)}
 .empty-version{background:#f4f8fd;border-color:#cfdff2}.empty-version strong{color:var(--text)}
 .back-version{color:var(--muted)}.back-version:hover{color:var(--text)}
 /* Ventana de progreso */
 #mod-progress{background:#1a233544;backdrop-filter:blur(4px)}
-.mod-progress-card{background:#fff;border-color:#bcd6f6;color:var(--text);box-shadow:0 20px 50px rgba(47,100,170,.25)}
+.mod-progress-card{background:#fff;border-color:#bcd6f6;color:var(--text);box-shadow:0 20px 50px rgba(90,125,170,.25)}
 .mod-progress-card progress{accent-color:var(--accent)}
 .mod-progress-card p{color:var(--muted)}
 .mod-progress-card button{background:#f4f8fd;border-color:var(--line);color:var(--text)}
+
+/* ===== Estilo app (como la captura): filas = tarjetas, chips azules, barra inferior ===== */
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60% 40% at 85% 0%,#cfe3fb 0%,transparent 70%),radial-gradient(50% 35% at 0% 30%,#dcebfc 0%,transparent 70%)}
+.dot{animation:pulso 1.8s ease-in-out infinite}
+@keyframes pulso{0%,100%{box-shadow:0 0 0 0 #6fb0ee66}50%{box-shadow:0 0 0 6px #6fb0ee00}}
+.panel-title{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.form-row{background:#fff;border:1px solid var(--line);border-radius:20px;padding:10px 14px;margin-bottom:12px;box-shadow:0 6px 18px rgba(90,125,170,.08)}
+.form-row label,.form-row .fixed-label{font-weight:700}
+.form-row .item-picker-button,.form-row select{background:transparent!important;border:0!important;box-shadow:none}
+.form-row .select-wrap select{background:#f4f8fd!important;border:1px solid #d6e4f4!important}
+.item-picker-button{min-height:46px;border-radius:14px}
+.item-picker-button:hover{background:#f1f7fe!important}
+.item-picker-button::after{color:#9bb3d1}
+.item-picker-button span{font-weight:600}
+.form-divider{display:none}
+.stage{overflow:hidden}
+.stage-footer{background:#fff}
+.download{padding:16px 20px;font-size:16px;font-weight:700}
+.mix-tools button{font-weight:600}
+
+/* iconos más grandes y chips pastel */
+.form-row{display:grid!important;grid-template-columns:minmax(150px,auto) 1fr;align-items:center;gap:12px;padding:12px 16px}
+.form-row>label,.form-row>.fixed-label{display:flex!important;align-items:center;gap:12px;font-size:14px;font-weight:700;color:var(--text)}
+.form-row>label img,.form-row .row-icon,.row-icon,.category-icon{width:52px!important;height:52px!important;min-width:52px;flex:none;padding:10px!important;border-radius:16px!important;background:linear-gradient(135deg,#b3cfef,#8fb3e0)!important;box-shadow:0 6px 14px rgba(90,125,170,.22)!important;object-fit:contain}
+.item-picker-button{min-height:60px;gap:14px}
+.item-picker-button img,.item-picker-option img{width:48px!important;height:48px!important;flex:none}
+.item-picker-button img[src*="category-icons"],.item-picker-option img[src*="category-icons"]{background:linear-gradient(135deg,#b3cfef,#8fb3e0)!important;padding:9px!important;border-radius:15px!important}
+.item-picker-button span{font-size:15px}
+.download{background:linear-gradient(135deg,#8db8ea,#6b9bd6)!important}
+.brandmark{background:linear-gradient(135deg,#b3cfef,#8fb3e0)!important}
+@media(max-width:560px){.form-row{grid-template-columns:1fr}.form-row>label,.form-row>.fixed-label{min-width:0}}
+@media(max-width:700px){
+ body{padding-bottom:96px}
+ #barra-inferior{display:flex}
+}
+#barra-inferior{display:none;position:fixed;left:14px;right:14px;bottom:14px;z-index:50;justify-content:space-around;gap:4px;padding:8px;border-radius:26px;background:#ffffffd9;backdrop-filter:blur(14px);border:1px solid #fff;box-shadow:0 14px 34px rgba(90,125,170,.22)}
+#barra-inferior a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;border-radius:20px;font-size:11px;font-weight:600;color:var(--muted);text-decoration:none}
+#barra-inferior a svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#barra-inferior a.activo{background:var(--accent-soft);color:var(--accent)}
 @media(max-width:640px){.brandmark{width:72px;height:72px;font-size:32px;border-radius:22px}.brand-text b{font-size:28px}.brand-text small{font-size:11px}}
 </style>
 </head>
@@ -154,13 +194,13 @@ body>[class*="picker"],[class*="picker-panel"],[class*="picker-menu"],[class*="p
   <div class="shell">
     <header class="topbar">
       <a class="brand" href="#" aria-label="Inicio"><span class="brandmark"><img src="./logo.png" alt="" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='./logo.jpg'}else this.remove()">D</span><span class="brand-text"><small>INICIO</small><b>DarielModz</b></span></a>
-      <div class="fish-top-actions"><div class="platform"><span class="dot"></span> <span id="platform-label">Elegir versión</span></div><div class="fish-nav"><button id="fish-menu-toggle" class="fish-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="fish-menu"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><nav id="fish-menu" class="fish-menu" aria-label="Menú principal" hidden><a href="./account.html">Modo de ejecución</a><a href="./earn.html">Guía de exportación</a><a href="https://t.me/modskinff0">Reportar error</a></nav></div></div>
+      <div class="fish-top-actions"><div class="platform"><span class="dot"></span> <span id="platform-label">Elegir versión</span></div><div class="fish-nav"><button id="fish-menu-toggle" class="fish-menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="fish-menu"><svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><nav id="fish-menu" class="fish-menu" aria-label="Menú principal" hidden><a href="./account.html">Modo de ejecución</a><a href="./earn.html">Guía de exportación</a><a href="https://t.me/didierxit7">Reportar error</a></nav></div></div>
     </header>
 
 
 
     <div class="intro" id="wardrobe-intro">
-      <div><p class="eyebrow">COMBINAR PERSONAJE</p><h1 id="fish-mod-turns" aria-live="polite">Cargando usos del mod…</h1></div>
+      <div><p class="eyebrow">CREAR TEXTURA</p><h1 id="fish-mod-turns" aria-live="polite">Cargando usos del mod…</h1></div>
       <span class="count">Android · Free Fire normal</span>
     </div>
     <main class="workspace" id="wardrobe-workspace">
@@ -390,7 +430,7 @@ self.onmessage=async event=>{
   const bundle=await pack(base,patch,compressed,p=>postMessage({id,progress:p}));postMessage({id,progress:80});
   const [os,game]=version.split('-');
   const folder=os==='android'?(game==='max'?'com.dts.freefiremax':'com.dts.freefireth')+'/files/contentcache/Optional/android/optionalavatarres/gameassetbundles/':'Documents/contentcache/Optional/ios/optionalavatarres/gameassetbundles/';
-  const zip=fflate.zipSync({[folder+base.bundleName]:bundle,['Derechos del mod pertenecen a NATHAN IOS VIP - MOD SKIN FF.TXT']:decode('RGVyZWNob3MgZGVsIG1vZCBwZXJ0ZW5lY2VuIGEgRklTSCBNT0QgWiAtIE1PRCBTS0lOIEZGIA==')},{level:0});
+  const zip=fflate.zipSync({[folder+base.bundleName]:bundle,['Creditos de la pagina pertenecen a Dariel Modz FF.TXT']:decode('RGVyZWNob3MgZGVsIG1vZCBwZXJ0ZW5lY2VuIGEgRklTSCBNT0QgWiAtIE1PRCBTS0lOIEZGIA==')},{level:0});
   postMessage({id,result:zip.buffer},[zip.buffer]);
  }catch(error){postMessage({id,error:error.message||String(error)});}
 };
@@ -483,9 +523,9 @@ self.onmessage=async event=>{
 
 <script id="alok-export-all">(() => {
  const versions=[
-  ['android-normal','Android_FF_THUONG.zip','Android · FF normal'],
+  ['android-normal','Android_FF_NORMAL.zip','Android · FF normal'],
   ['android-max','Android_FF_MAX.zip','Android · FF MAX'],
-  ['ios-normal','iOS_FF_THUONG.zip','iOS · FF normal'],
+  ['ios-normal','iOS_FF_NORMAL.zip','iOS · FF normal'],
   ['ios-max','iOS_FF_MAX.zip','iOS · FF MAX']
  ];
  window.alokExportAll=async (selection,progress) => {
@@ -522,17 +562,30 @@ self.onmessage=async event=>{
 
 
 <style>#mod-progress{position:fixed;inset:0;z-index:10000;background:#08080baa;display:grid;place-items:center;padding:20px}#mod-progress[hidden]{display:none}.mod-progress-card{width:min(480px,100%);background:#242431;border:1px solid #b29aff;border-radius:20px;padding:26px;color:#fff}.mod-progress-heading{display:flex;justify-content:space-between;gap:20px;font-weight:700;font-size:20px}.mod-progress-card progress{width:100%;accent-color:#c5ec78;margin:20px 0 10px}.mod-progress-card p{color:#b8b8c5}.mod-progress-card button{padding:10px 20px;border:1px solid #777;border-radius:10px;background:#333341;color:#fff;cursor:pointer}</style><div id="mod-progress" hidden role="dialog" aria-modal="true" aria-labelledby="mod-progress-title"><div class="mod-progress-card"><div class="mod-progress-heading"><span id="mod-progress-title">Đang tạo file mod</span><span id="mod-progress-percent">0%</span></div><progress id="mod-progress-bar" max="100" value="0"></progress><p id="mod-progress-step" aria-live="polite">Đang chuẩn bị trang phục…</p><button type="button" id="mod-cancel">Hủy tạo file</button></div></div>
+
 <script id="traductor-es">
 /* Traduce en vivo los textos que crean otros archivos .js. Agrega frases nuevas en D. */
 (()=>{
  const D={
-  'Bản chạy cục bộ · không cần đăng nhập':'Versión local · no requiere iniciar sesión'
+  'Bản chạy cục bộ · không cần đăng nhập':'Web Para crear texturas · Dariel Modz',
+  'FF thường':'FF normal',
+  'Android · FF thường':'Android · FF normal',
+  'iOS · FF thường':'iOS · FF normal',
+  'Tạo file mod':'Crear archivo mod',
+  'Tạo 4 phiên bản':'Crear las 4 versiones',
+  'Bản quyền FISH MOD Z':'Derechos de FISH MOD Z',
+  'Bản quyền':'Derechos'
  };
  const R=[];
+ const N={"lang khach tim": "Vagabundo púrpura", "soi cong nghe": "Lobo tecnológico", "hac tinh": "Estrella negra", "bich vang": "Jade dorado", "bushido": "Bushido", "bushido cao cap": "Bushido premium", "chien binh tho": "Guerrero conejo", "tho quay": "Conejo travieso", "tho purple": "Conejo morado", "tho thien ha": "Conejo supremo", "tho yellow": "Conejo amarillo", "tho red": "Conejo rojo", "tho neon": "Conejo neón", "tho black": "Conejo negro", "chien than phong cach do": "Dios de la guerra estilo rojo", "chien than phong cach tim": "Dios de la guerra estilo morado", "chien than phong cach xanh": "Dios de la guerra estilo azul", "chien than phong cach vang": "Dios de la guerra estilo dorado", "dao si do": "Taoísta rojo", "duong pho cao cap": "Urbano premium", "duong pho": "Urbano", "ghet su gia doi": "Mensajero del hambre", "su gia ac ma": "Mensajero demoníaco", "lan song nang dong": "Ola dinámica", "quai nhan hu khong": "Monstruo del vacío", "soai ca cuong thi": "Galán jiangshi", "phu thuy": "Hechicero", "tho san huyet quy": "Cazador de demonios de sangre", "tieu tien": "Pequeño inmortal", "titan tien cong": "Titán al ataque", "titan thiet giap": "Titán acorazado", "trai ngo ngao": "Chico rebelde", "ngu thanh phong": "Cinco vientos sagrados", "nguoi choi squid": "Jugador de Squid", "nguoi choi squid game": "Jugador de Squid Game", "qua den": "Cuervo negro", "quy lua": "Demonio de fuego", "thich khach bong dem": "Asesino de la noche", "thiet quyen": "Puño de hierro", "thu linh binh doan": "Líder de legión", "ve binh tinh tu": "Guardián estelar", "vo dien loi than": "Dios del rayo", "tiec cuong loan": "Fiesta desenfrenada", "bong ro": "Baloncesto", "bong gau do": "Osito rojo", "ca map": "Tiburón", "ca sau": "Cocodrilo", "dep di bien": "Sandalias de playa", "hacker": "Hacker", "he vui ve": "Verano alegre", "hoa quyen su": "Maestro del puño de fuego", "hoang de hai huoc": "Emperador gracioso", "to ong": "Colmena", "dau si huyen thoai": "Gladiador legendario", "dau sy huyen thoai": "Gladiador legendario", "dau si tho": "Gladiador conejo", "dau": "Combate", "gojo": "Gojo", "hac ginh": "Gin oscuro", "lv up": "LV Up", "ac quy": "Demonio", "angelic neon": "Angelical neón", "bang cuop dem": "Pandilla nocturna", "bo rach roi": "Rasgado", "bong chay": "Ardiente", "dong phuc anh": "Uniforme inglés", "3 lo trang": "Blanco de 3 agujeros", "bong ma phia tay": "Fantasma del Oeste", "cau thu tay dai": "Jugador de manga larga", "co rua den": "Cuello alto negro", "co rua trang": "Cuello alto blanco", "cuop bien nam": "Pirata del Sur", "da biker": "Cuero motociclista", "da bong anh": "Fútbol Inglaterra", "da bong argentina": "Fútbol Argentina", "da bong brazill": "Fútbol Brasil", "da bong den": "Fútbol negro", "da bong duc": "Fútbol Alemania", "ao bong bi": "Camiseta deportiva", "peru": "Perú", "thanh phong": "Brisa pura", "thich khach kim long": "Asesino dragón dorado", "ky hoi": "Festival", "phong cach street": "Estilo street", "pyjama gau truc": "Pijama de panda", "sooc den": "Short negro", "tham hiem hong thien": "Explorador del cielo rosa", "thien than thanh thien": "Ángel del cielo azul", "thien than hoang kim": "Ángel dorado", "tre trau": "Chavalo", "bang che mat ao lot": "Banda facial de camiseta interior", "bang che mat quan lot": "Banda facial de ropa interior", "chien than dung nham": "Dios de la guerra de lava", "chien than": "Dios de la guerra", "ffws 2025": "FFWS 2025", "ma bup be": "Muñeca fantasma", "ma bup be nham thach": "Muñeca fantasma de magma", "noel": "Navidad", "tien si con trung": "Doctor insecto", "phuong hoang xuat the": "Surge el fénix", "huyet nguyet tram": "Tajo de luna de sangre", "dia chan sac mau": "Terremoto de colores", "hac thach long": "Dragón de obsidiana", "trieu hoi manh ho": "Invocar tigre feroz", "ac nhan bo cap": "Villano", "phat sung sac mau": "Disparo de colores", "ho mua goi sung": "Lluvia de armas del tigre", "long vu vang": "Danza del dragón dorado", "sinh ra tu lua": "Nacido del fuego", "trieu hoi sung": "Invocar arma", "thi uy long trao": "Garra de dragón intimidante", "con thinh no": "Ira desatada", "duong kiem anh sang": "Espada de luz", "thuc tinh long toc": "Despertar del clan dragón", "trieu hoi rong": "Invocar dragón", "vo luong thoi khong": "Espacio-tiempo infinito", "tu long xuat hien": "Aparecen los cuatro dragones", "trieu hoi cuong long": "Invocar dragón furioso", "m60 pha mong": "M60 destructor", "booyah phong cach": "Booyah con estilo", "gia nhap chinh phuc": "Únete a la conquista", "luot tren may": "Deslizarse sobre las nubes", "mac dinh": "Por defecto", "toc": "Cabello", "ao": "Camiseta", "quan": "Pantalón", "chan": "Zapatos", "na": "Máscara", "mat": "Rostro", "hanh dong": "Emote", "xoa na": "Sin máscara", "xoa mat": "Sin rostro", "xoa toc": "Sin cabello", "xoa ao": "Sin camiseta", "xoa quan": "Sin pantalón", "xoa giay": "Sin zapatos", "xoa chan": "Sin zapatos"};
+ const key=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/gi,'d').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+ window.esName=s=>N[key(s)]||s;
  const viet=/[ăâđêôơưàáạảãèéẹẻẽìíịỉĩòóọỏõùúụủũỳýỵỷỹ]/i, warned=new Set();
  const fix=t=>{
   const k=t.trim(); if(!k) return t;
   if(D[k]) return t.replace(k,D[k]);
+  if(N[key(k)]) return t.replace(k,N[key(k)]);
+  if(/[·,|:]/.test(k)){const parts=k.split(/(\s*[·,|:]\s*)/).map(p=>D[p.trim()]?p.replace(p.trim(),D[p.trim()]):(N[key(p)]||p));const j=parts.join('');if(j!==k)return t.replace(k,j);}
   for(const [re,to] of R) if(re.test(k)) return t.replace(k,k.replace(re,to));
   if(viet.test(k)&&!warned.has(k)){warned.add(k);console.warn('[traductor-es] sin traducir:',k);}
   return t;
@@ -553,6 +606,19 @@ self.onmessage=async event=>{
  };
  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',start):start();
 })();
+</script>
+
+<script id="barra-inferior-js">
+/* Barra inferior estilo app (solo móvil). Usa los enlaces del menú existente. Para quitarla, borra este bloque. */
+(()=>{try{
+ const links=[...document.querySelectorAll('#fish-menu a')].slice(0,3);
+ const I=['<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>','<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 12h6M12 9v6"/>','<circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/>','<circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16v.5"/>'];
+ const bar=document.createElement('nav');bar.id='barra-inferior';bar.setAttribute('aria-label','Navegación');
+ const add=(href,txt,i,on)=>{const a=document.createElement('a');a.href=href;if(on)a.className='activo';a.innerHTML='<svg viewBox="0 0 24 24">'+I[i]+'</svg><span>'+txt+'</span>';bar.append(a);};
+ add('#','Inicio',0,true);
+ links.forEach((l,i)=>add(l.getAttribute('href')||'#',(l.textContent||'').trim().slice(0,14),i+1,false));
+ document.body.append(bar);
+}catch(e){}})();
 </script>
 </body>
 </html>
